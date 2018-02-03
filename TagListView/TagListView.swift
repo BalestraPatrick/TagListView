@@ -397,7 +397,7 @@ open class TagListView: UIView {
         rearrangeViews()
     }
     
-    open func removeAllTags() {
+    @objc open func removeAllTags() {
         let views = tagViews as [UIView] + tagBackgroundViews
         for view in views {
             view.removeFromSuperview()
